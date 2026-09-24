@@ -1,4 +1,4 @@
-public class java{
+public class kStepRot{
     static int[] rotatingArray(int[] a, int k){
         int n = a.length;
         k = k%n;
