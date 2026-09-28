@@ -6,6 +6,6 @@ public class miscellaneous{
         System.out.println(a);
         int b = sc.nextInt();
         System.out.println(b);
-        
+        sc.close();
     }
 }
