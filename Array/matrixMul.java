@@ -9,7 +9,6 @@ public class matrixMul {
         int r2 = b.length;
         int c2 = b[0].length;
 
-        // Multiplication possible only if c1 == r2
         if (c1 != r2) {
             System.out.println("Matrix multiplication is not possible!");
             return null;
