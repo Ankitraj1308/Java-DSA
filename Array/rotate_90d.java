@@ -1,7 +1,7 @@
 import java.util.Scanner;
-public class Transpose {
 
-    static int[][] transpose(int[][] arr,int r,int c) {
+public class rotate_90d {
+    static void transpose(int[][] arr,int r,int c) {
         for (int i = 0; i < r; i++) {
             for (int j = 0; j < i; j++) {
                 int temp = arr[i][j];
@@ -9,7 +9,20 @@ public class Transpose {
                 arr[j][i]=temp;
             }
         }
-        return arr;
+    }
+    static void swap(int[] arr,int n){
+        for (int i = 0; i < n/2; i++) {
+            int temp=arr[i];
+            arr[i]=arr[n-i-1];
+            arr[n-i-1]=temp;
+        }
+    }
+    static int[][] rotate(int[][] matrix , int n){
+        transpose(matrix, n, n);
+        for (int i = 0; i < matrix.length; i++) {
+            swap(matrix[i], n);
+        }
+        return matrix;
     }
 
     public static void main(String[] args) {
@@ -23,15 +36,15 @@ public class Transpose {
                 matrix[i][j]=sc.nextInt();
             }
         }
-        matrix = transpose(matrix, r, c);
+        matrix = rotate(matrix, c);
         for (int i = 0; i < c; i++) {
             for (int j = 0; j < r; j++) {
                 System.out.print(matrix[i][j]+" ");
             }
             System.out.println();
         }
+        
         sc.close();
     }
     
 }
-

@@ -1,6 +1,6 @@
 public class secondLargest {
 
-    static int secondLargest(int[][] arr) {
+    static int findSecondLargest(int[][] arr) {
 
         int largest = Integer.MIN_VALUE;
         int second = Integer.MIN_VALUE;
@@ -31,7 +31,7 @@ public class secondLargest {
             {7, 12, 20}
         };
 
-        System.out.println(secondLargest(arr));
+        System.out.println(findSecondLargest(arr));
     }
 }
 

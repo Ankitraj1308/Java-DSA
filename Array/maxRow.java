@@ -1,6 +1,6 @@
 public class maxRow {
 
-    static void maxRow(int[][] arr) {
+    static void findMaxRow(int[][] arr) {
 
         int maxSum = Integer.MIN_VALUE;
         int rowNumber = -1;
@@ -31,7 +31,7 @@ public class maxRow {
             {4, 8, 1}
         };
 
-        maxRow(arr);
+        findMaxRow(arr);
     }
 }
 
