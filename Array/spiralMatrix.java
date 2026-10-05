@@ -40,5 +40,6 @@ public class spiralMatrix {
             }
             System.out.println();
         }
+        sc.close();
     }
 }
