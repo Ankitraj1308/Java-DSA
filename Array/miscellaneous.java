@@ -1,33 +1,21 @@
-
+/* moving zeroes to last */
 public class miscellaneous{
     public static void main(String[] args) {
-        
-        int[][] a = {
-                    {1, 2, 3, 4},
-                    {5, 6, 7, 8},
-                    {9, 10, 11, 12}
-                    };
-
-        int[][] b = {
-                    {1, 2, 3},
-                    {4, 5, 6},
-                    {7, 8, 9},
-                    {10, 11, 12}
-                    };
-        int[][] mul = new int[3][3];
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                for (int k = 0; k < 4; k++){
-                    mul[i][j] += a[i][k]*b[k][j];
-                }
-                
+        int[] arr = {0,1,3,0,12};
+        int j = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[j]<arr[i]){
+                arr[j]=arr[i];
+                j++;
             }
         }
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(mul[i][j]+" ");
-            }
-            System.out.println();
+        while(j<arr.length){
+            arr[j]=0;
+            j++;
         }
-    }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]+" ");
+        }
+           
+    }        
 }
