@@ -18,10 +18,10 @@ public class SelectionSort {
         }
     }
     public static void main(String[] args) {
-        int[] arr = {5,2,4,3,1,0};
+        int[] arr = {9,8,7,6,5,4};
         selectionSort(arr);
         for(int i:arr){
-            System.out.print(arr[i]+" ");
+            System.out.print(i+" ");
         }
     }
 }
