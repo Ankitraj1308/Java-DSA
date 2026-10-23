@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class matrixMul {
+public class miscellaneous {
     
 
     static int[][] multiply(int[][] a, int[][] b) {
